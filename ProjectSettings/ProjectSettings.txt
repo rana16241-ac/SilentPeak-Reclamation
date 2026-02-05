@@ -1,0 +1,99 @@
+# Unity Project Settings for Silent Peak: Reclamation
+
+## Required Unity Version
+- Unity 2021.3 LTS or newer
+
+## Platform Settings
+
+### Android
+- Minimum API Level: Android 7.0 (API 24)
+- Target API Level: Android 13 (API 33)
+- Scripting Backend: IL2CPP
+- API Compatibility Level: .NET Standard 2.1
+- Target Architectures: ARM64 ✓
+
+### Build Settings
+- Compression Method: LZ4
+- Split Application Binary: Enabled (for large games)
+
+### Player Settings
+- Company Name: Your Studio Name
+- Product Name: Silent Peak Reclamation
+- Package Name: com.yourstudio.silentpeak
+- Version: 1.0.0
+- Bundle Version Code: 1
+
+### Graphics
+- Graphics API: OpenGLES3, Vulkan
+- Color Space: Linear
+- Auto Graphics API: Disabled
+
+### Quality Settings
+- Texture Quality: Full Res
+- Anisotropic Textures: Per Texture
+- Anti Aliasing: 4x Multi Sampling
+- Soft Particles: Enabled
+- Shadows: Hard and Soft Shadows
+- Shadow Resolution: High Resolution
+- Shadow Distance: 50
+
+### Orientation
+- Default Orientation: Landscape Left
+- Allowed Orientations:
+  - Landscape Left: ✓
+  - Landscape Right: ✓
+  - Portrait: ✗
+  - Portrait Upside Down: ✗
+
+### Other Settings
+- Multithreaded Rendering: Enabled
+- Static Batching: Enabled
+- Dynamic Batching: Enabled
+- GPU Skinning: Enabled
+
+### Optimization
+- Stripping Level: Medium
+- Managed Stripping Level: Medium
+- Vertex Compression: Everything
+- Optimize Mesh Data: Enabled
+
+### Permissions (Android)
+- Internet: Optional (for ads)
+- Access Network State: Optional (for ads)
+- Write External Storage: Not required
+- Read External Storage: Not required
+
+## Required Packages
+- TextMeshPro (com.unity.textmeshpro)
+- Unity UI (com.unity.ugui)
+- Unity Ads (optional - com.unity.ads)
+- Unity IAP (optional - com.unity.purchasing)
+
+## Build Instructions
+
+### For Android APK:
+1. File → Build Settings
+2. Select Android platform
+3. Switch Platform
+4. Player Settings → Configure as above
+5. Build APK
+
+### For Android Studio:
+1. File → Build Settings
+2. Select Android platform
+3. Check "Export Project"
+4. Export to desired location
+5. Open in Android Studio
+6. Build using Gradle
+
+## Testing
+- Test on multiple Android devices
+- Test different screen resolutions
+- Test touch controls
+- Test performance on low-end devices (minimum: 2GB RAM)
+
+## Performance Targets
+- Target FPS: 60
+- Minimum FPS: 30
+- Maximum APK Size: 150MB
+- RAM Usage: < 1GB
